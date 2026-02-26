@@ -5,7 +5,7 @@ services:
     container_name: memmachine-postgres
     restart: unless-stopped
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "${POSTGRES_PORT:-5433}:5433"
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-memmachine}
       POSTGRES_USER: ${POSTGRES_USER:-memmachine}
@@ -67,7 +67,7 @@ services:
     environment:
       # Database configuration
       POSTGRES_HOST: ${POSTGRES_HOST:-postgres}
-      POSTGRES_PORT: ${POSTGRES_PORT:-5432}
+      POSTGRES_PORT: ${POSTGRES_PORT:-5433}
       POSTGRES_USER: ${POSTGRES_USER:-memmachine}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-memmachine_password}
       POSTGRES_DB: ${POSTGRES_DB:-memmachine}
