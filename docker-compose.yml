@@ -112,7 +112,7 @@ services:
       context: docs/
       dockerfile: Dockerfile
     ports:
-      - "${DOCS_PORT:-3010}:3010"
+      - "${DOCS_PORT:-3011}:3011"
     volumes:
       - ./docs:/docs:ro,Z
 
